@@ -5,6 +5,7 @@ services:
     image: gwmsdeveloper/ce-workspace:latest
     volumes:
       - /cvmfs:/cvmfs:ro
+      - /dev/fuse:dev/fuse
     networks:
       - gwms
     hostname: ce-workspace.fnal.gov
